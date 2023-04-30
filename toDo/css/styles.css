@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: red;
+  text-align: center;
+  padding: 40px 50px;
+}
+
+.addBtn {
+  padding: 13px 24px;
+
+  background-color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+#myInput {
+  width: 80%;
+  height: 40px;
+}
+
+#myUl {
+  list-style: none;
+  margin-right: 30px;
+}
+
+#myUl li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  transition: 250ms;
+}
+
+#myUl li:nth-child(2n + 1) {
+  background-color: #f4f4f4;
+}
+
+#myUl li:hover {
+  background-color: rgb(149, 149, 149);
+  cursor: pointer;
+}
+
+#myUl li.checked {
+  text-decoration: line-through;
+  background-color: rgb(90, 89, 89);
+  color: white;
+}
+
+.close {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  transition: 300ms;
+  text-decoration-line: none;
+}
+
+.close:hover {
+  background-color: red;
+  color: white;
+}
