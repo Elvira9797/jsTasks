@@ -92,4 +92,15 @@ function fillTasksList() {
   }
 }
 
-export { addNewTask, onClickTaskBehaviour, fillTasksList };
+function addNewTaskPressEnter(event) {
+  if (event.code === "Enter") {
+    addNewTask();
+  }
+}
+
+export {
+  addNewTask,
+  onClickTaskBehaviour,
+  fillTasksList,
+  addNewTaskPressEnter,
+};
